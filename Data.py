@@ -11,18 +11,7 @@ names = {
     10: "Kiosk"
 }
 
-eatery = [{"Gourmet":
-                 {"Mingos":
-                      {"Sandwiches":
-                           {"Veg Sandwiches": 50,
-                            "Chicken Sandwich": 90,
-                            },
-                       "Shakes": {"Papaya": 50,
-                                  "Guava": 40}
-                      }
-                 }
-            },
-          {
+eatery = [{
                "Nandini": {
                    "Hot Beverages": {
                        "Coffee / Tea / Badam Milk": 10,
@@ -74,7 +63,7 @@ eatery = [{"Gourmet":
                        "Mosambi": 32
                    },
                    "Blenders": {
-                       "Imunity Booster": 25,
+                       "Immunity Booster": 25,
                        "Melon Quencher": 30,
                        "Summer Breeze": 35,
                        "Purple Pine": 35,
@@ -94,7 +83,64 @@ eatery = [{"Gourmet":
                        "Mint Lemonade": 20,
                        "Sweet Lassi": 30,
                        "Fruit Lassi": 40
+                   },
+                   "Fruit Milk Shakes": {
+                       "Papaya": 30,
+                       "Banana": 30,
+                       "Chikoo": 32,
+                       "Mango": 35,
+                       "Apple": 40
+                   },
+                   "Fun Shakes": {
+                       "Strawberry": 30,
+                       "Litchi": 30,
+                       "Chocolate": 35,
+                       "Cold Coffee": 35,
+                       "Oreo Shake": 35
+                   },
+                   "Fun Fruit Milkshakes": {
+                       "Pink Floyd": 35,
+                       "Chikoo Booster": 35,
+                       "Choco Banana": 38,
+                       "Papaya Berry": 35,
+                       "Apple Delight": 40,
+                       "Banana Conker": 40
+                   },
+                   "Assorted Salads": {
+                       "Fresh Fruit Bowl": 40,
+                       "Single Fruit Bowl": 45,
+                       "Veg Salad Bowl": 50,
+                       "Chicken Salad Bowl": 65
+                   },
+                   "Non-Veg Sandwich": {
+                       "Boiled Egg N' Mayo": 40,
+                       "Egg Indiana": 45,
+                       "Chicken Indiana": 55,
+                       "Chicken Coleslaw": 55,
+                       "Double Decker": 70
+                   },
+                   "Pasta Station": {
+                       "Veg Pasta": 60,
+                       "Chicken Pasta": 75
+                   },
+                   "Veg Sandwiches": {
+                       "Peanut Butter": 40,
+                       "Peanut Butter Jam": 45,
+                       "Peanut Butter Banana": 45,
+                       "Simply Veggie": 35,
+                       "Fresheteria's Grill": 35,
+                       "Corn N' Potato": 40,
+                       "Corn Indiana": 40,
+                       "Paneer Indiana": 45,
+                       "Chilly Cheese": 45,
+                       "Cheesy Corn Americana": 50,
+                       "Cheesy Veggie": 50,
+                       "Rohan Bajaj": 60
                    }
                }
-           }
-           ]
+           },
+          {
+              "Just Bakes": {
+              }
+          }
+          ]
