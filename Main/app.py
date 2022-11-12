@@ -19,9 +19,10 @@ frame_2 = tk.Frame(root, height=frame_height, width=frame_width)
 frame_3 = tk.Frame(root, height=frame_height, width=frame_width)
 frame_4 = tk.Frame(root, height=frame_height, width=frame_width)
 frame_5 = tk.Frame(root, height=frame_height, width=frame_width)
+frame.grid(ipadx=5, ipady=5, padx=25, pady=25)
 
 button_height = 5
-button_width = 30
+button_width = 3
 
 for i in yash:
     if i == 1:
@@ -29,6 +30,7 @@ for i in yash:
         button_1 = tk.Button(
             frame, height=button_height, width=button_width, text=value, command=lambda: Gourmet.gourmet()
         )
+        button_1.grid(ipadx=5, ipady=5, padx=25, pady=25)
         button_1.pack(side="left")
     elif i == 2:
         value = yash[i]
