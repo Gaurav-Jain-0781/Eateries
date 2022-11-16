@@ -19,10 +19,9 @@ frame_2 = tk.Frame(root, height=frame_height, width=frame_width)
 frame_3 = tk.Frame(root, height=frame_height, width=frame_width)
 frame_4 = tk.Frame(root, height=frame_height, width=frame_width)
 frame_5 = tk.Frame(root, height=frame_height, width=frame_width)
-frame.grid(ipadx=5, ipady=5, padx=25, pady=25)
 
 button_height = 5
-button_width = 3
+button_width = 30
 
 for i in yash:
     if i == 1:
