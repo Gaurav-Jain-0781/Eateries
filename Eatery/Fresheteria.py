@@ -10,32 +10,10 @@ frame_height = 5
 frame_width = 7
 
 data = eatery[1]
-title = list(data.keys())
-
-# creating new root for each eatery
-sub_eatery = tk.Tk()
-
-# basic configuration of root
-sub_eatery.geometry('440x535')
-label = tk.Label(sub_eatery, text="Fresheteria")
-label.pack()
-sub_eatery.title(str(title))
-
-# creating frames for app
-frame_1 = tk.Frame(sub_eatery, height=frame_height, width=frame_width)
-frame_2 = tk.Frame(sub_eatery, height=frame_height, width=frame_width)
-frame_3 = tk.Frame(sub_eatery, height=frame_height, width=frame_width)
-frame_4 = tk.Frame(sub_eatery, height=frame_height, width=frame_width)
-frame_5 = tk.Frame(sub_eatery, height=frame_height, width=frame_width)
-frame_6 = tk.Frame(sub_eatery, height=frame_height, width=frame_width)
-
-# buttons of root
-values = data.values()
-for v in values:
-    buttons = list(v.keys())
+title = "Fresheteria"
 
 
-def func_buttons():
+def func_buttons(buttons, frame_1, frame_2, frame_3, frame_4, frame_5, frame_6):
     global i
     for b in buttons:
         if i == 1:
@@ -75,7 +53,29 @@ def func_buttons():
 
 
 def fresheteria():
-    func_buttons()
+    # creating new root for each eatery
+    sub_eatery = tk.Tk()
+
+    # basic configuration of root
+    sub_eatery.geometry('440x535')
+    label = tk.Label(sub_eatery, text="Fresheteria")
+    label.pack()
+    sub_eatery.title(str(title))
+
+    # creating frames for app
+    frame_1 = tk.Frame(sub_eatery, height=frame_height, width=frame_width)
+    frame_2 = tk.Frame(sub_eatery, height=frame_height, width=frame_width)
+    frame_3 = tk.Frame(sub_eatery, height=frame_height, width=frame_width)
+    frame_4 = tk.Frame(sub_eatery, height=frame_height, width=frame_width)
+    frame_5 = tk.Frame(sub_eatery, height=frame_height, width=frame_width)
+    frame_6 = tk.Frame(sub_eatery, height=frame_height, width=frame_width)
+
+    # buttons of root
+    values = data.values()
+    for v in values:
+        buttons = list(v.keys())
+
+    func_buttons(buttons, frame_1, frame_2, frame_3, frame_4, frame_5, frame_6)
     frame_1.pack()
     frame_2.pack()
     frame_3.pack()
